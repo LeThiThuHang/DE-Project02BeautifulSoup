@@ -23,11 +23,14 @@ Mô tả cụ thể:
         
         
 File: BeautifulSoup_final.ipynb
+Library use: BeautifulSoup, requests, logging, csv
 
 + Part 1: scrape data from web and store it to the csv file
 -- Scrape data from website and store it to the combined_data dictionary
 -- Read the dictionary to the CSV file 'newegg_products.csv'
 -- Store the logfile when reading the data in logfile.log 
+
+Library use: pandas, matplotlib, numpy
 
 + Part 2 :Transform, clean and visualize data
 -- Read data from csv file using Pandas library
@@ -36,4 +39,14 @@ File: BeautifulSoup_final.ipynb
 -- Visualize data 
 
 File: db_connection.ipynb
+Library use: pandas, sqlaclchemy, pymysql
 Connect to the SQL database 'unigap_de_p02' and read the csv file ''newegg_products.csv' as table
+
+Steps to connect to sql
+1. Download mysql and sql workbench
+2. Setup path variables
+3. Check if mysql is installed successful
+4. Create db: go to SQL Command Line, enter pw, create databse unigap_de_p02
+5. Check the db in the SQL Command Line if db created succesfully
+Note: there is one error of the system path of library pymysql , solve by using sys.path and add the location of the system variables 
+6. Connect to SQL workbench to view the database 
